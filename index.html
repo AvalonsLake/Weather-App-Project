@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatable" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +9,90 @@
   </head>
   <body>
     <header></header>
-    <nav></nav>
-    <main></main>
+    <nav>
+      <ul>
+        <li><u>Home</u></li>
+        <li><u>News</u></li>
+        <li><u>Weather</u></li>
+        <li style="float: right"><u>About</u></li>
+      </ul>
+    </nav>
+    <main>
+      <h1><u>Latest Weather Summary!</u></h1>
+      <img
+        id="summary-icon"
+        class="summary-icon"
+        src="images/Icons/PartlyCloudy.jpg"
+      />
+      <div class="summary">
+        <h2>Tooele valley</h2>
+        <p>Currently: Partly Cloudy</p>
+        <p>Tempature: 78°F</p>
+        <p>Feels Like: 74°F</p>
+        <p>Humidity: 22%</p>
+        <p>Wind Speed: 4 mph</p>
+        <p>Wind Direction</p>
+        <p>Precipitation: 0%</p>
+      </div>
+
+      <h2><u>Five Day Forecast</u></h2>
+
+      <div class="flex-col">
+        <span id="dayTitle1" class="col-head">Day 1</span>
+        <img
+          id="weatherIcon1"
+          class="weatherIcon"
+          src="images/Icons/Sunny.png"
+        />
+        <span class="temp-data">
+          <span id="data1"></span> <span>82°F</span>
+        </span>
+      </div>
+      <div class="flex-col">
+        <span id="dayTitle2" class="col-head"> Day 2</span>
+        <img
+          id="weatherIcon2"
+          class="weatherIcon"
+          src="images/Icons/Windy.jpg"
+        />
+        <span class="temp-data">
+          <span id="data2"></span> <span>80°F</span>
+        </span>
+      </div>
+      <div class="flex-col">
+        <span id="dayTitle3" class="col-head">Day 3</span>
+        <img
+          id="weatherIcon3"
+          class="weatherIcon"
+          src="images/Icons/PartlyCloudy.jpg"
+        />
+        <span class="temp-data">
+          <span id="data3"></span> <span>79°F</span>
+        </span>
+      </div>
+      <div class="flex-col">
+        <span id="dayTitle4" class="col-head">Day 4</span>
+        <img
+          id="weatherIcon4"
+          class="weatherIcon"
+          src="images/Icons/Cloudy.png"
+        />
+        <span class="temp-data">
+          <span id="data4"></span> <span>77°F</span>
+        </span>
+      </div>
+      <div class="flex-col">
+        <span id="dayTitle5" class="col-head">Day 5</span>
+        <img
+          id="weatherIcon5"
+          class="weatherIcon"
+          src="images/Icons/Rain.png"
+        />
+        <span class="temp-data">
+          <span id="data5"></span> <span>74°F</span>
+        </span>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
