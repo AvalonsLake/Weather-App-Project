@@ -1,15 +1,55 @@
 body {
-  background-color: rgb(147, 139, 139);
+  background-color: rgb(173, 165, 165);
   text-align: center;
   background-size: cover;
 }
 
+main {
+  background-color: rgb(186, 186, 186);
+  /* padding-bottom: 30px; */
+  padding: 20px 20px;
+  margin: 20px;
+}
+h1 {
+  text-align: start;
+  margin-left: 20px;
+}
+
 nav {
   background-color: rgb(186, 186, 186);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav a {
+  margin: 0px 20px;
+  color: black;
+  text-decoration: none;
+}
+
+nav .home {
+  background-color: rgb(0, 143, 191);
+  padding: 15px;
+}
+
+nav .about {
+  justify-self: flex-end;
+  margin-left: auto;
 }
 
 .summary {
+  padding: 15px;
   background-color: rgb(167, 172, 179);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.167);
+}
+
+.details {
+  text-align: start;
+  float: left;
 }
 
 .summary img {
@@ -18,5 +58,20 @@ nav {
 }
 
 .forecast {
+  margin-top: 30px;
+  padding: 10px;
   background-color: rgb(167, 172, 179);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.167);
+}
+
+.days {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-col img {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
 }

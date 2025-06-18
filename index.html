@@ -10,56 +10,78 @@
   <body>
     <header></header>
     <nav>
-      <a href="index.html" class="home">Home</a>
+      <div class="home">
+        <a href="index.html">Home</a>
+      </div>
+    
       <a href=news.html" class="news">News</a>
       <a href="" class="weather">Weather</a>
+      <a href="" class="about">About</a>
     </nav>
     <main>
       <h1>Latest Weather</h1>
       <div class="summary">
+        <div class="details">
         <h1>Weather summary</h1>
         <h2>Tooele</h2>
         <p>Currently: Partly Cloudy</p>
         <p>Tempature: 78°F</p>
-        <p>Wind chill: 4 mph</p>
-        <p>Humidity:</p>
-        <p>Wind Speed:</p>
-
-        <img src="images/Sky.webp" alt="sky picture">
+        <p>Wind chill: 74°F</p>
+        <p>Humidity: 64%</p>
+        <p>Wind Speed: 4 mph</p>
+        </div>
+      
+        <div class="summary-icon">
+          <img src="images/Sky.webp" alt="sky picture">
+        </div>
       </div>
+              
+
 
       <div class="forecast">
-        <h2><u>Five Day Forecast</u></h2>
-
-        <div class="flex-col">
-          <span id="dayTitle1" class="col-head">Day 1</span>
+        <h2>Five Day Forecast</h2>
+        <h3>Tooele</h3>
+        <div class="days">
+          <div class="flex-col">
+          <span id="dayTitle1" class="col-head">Thursday</span>
           <span class="temp-data">
-            <span id="data1"></span> <span>82°F</span>
+            <span id="data1"></span>
+            <img src="images/Icons/Sunny.png">
+            <span>82°F</span>
           </span>
         </div>
         <div class="flex-col">
-          <span id="dayTitle2" class="col-head"> Day 2</span>
+          <span id="dayTitle2" class="col-head">Friday</span>
           <span class="temp-data">
-            <span id="data2"></span> <span>80°F</span>
+            <span id="data2"></span>
+            <img src="images/Icons/Windy.jpg">
+            <span>80°F</span>
           </span>
         </div>
         <div class="flex-col">
-          <span id="dayTitle3" class="col-head">Day 3</span>
+          <span id="dayTitle3" class="col-head">Saturday</span>
           <span class="temp-data">
-           <span id="data3"></span> <span>79°F</span>
+           <span id="data3"></span> 
+            <img src="images/Icons/PartlyCloudy.jpg">
+            <span>79°F</span>
           </span>
         </div>
         <div class="flex-col">
-         <span id="dayTitle4" class="col-head">Day 4</span>
+         <span id="dayTitle4" class="col-head">Sunday</span>
          <span class="temp-data">
-            <span id="data4"></span> <span>77°F</span>
+            <span id="data4"></span>
+            <img src="images/Icons/Cloudy.png">
+            <span>77°F</span>
           </span>
         </div>
         <div class="flex-col">
-          <span id="dayTitle5" class="col-head">Day 5</span>
+          <span id="dayTitle5" class="col-head">Monday</span>
           <span class="temp-data">
-            <span id="data5"></span> <span>74°F</span>
+            <span id="data5"></span>
+            <img src="images/Icons/Rain.png">
+            <span>74°F</span>
           </span>
+        </div>
         </div>
       </div>
     </main>
