@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatable" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="weather-header.js"></script>
     <title>My Weather App</title>
   </head>
   <body>
@@ -28,12 +29,12 @@
       <div class="summary">
         <div class="details">
           <h1>Weather summary</h1>
-          <h2>Tooele</h2>
-          <p>Currently: Partly Cloudy</p>
-          <p>Tempature: 78°F</p>
-          <p>Wind chill: 74°F</p>
-          <p>Humidity: 64%</p>
-          <p>Wind Speed: 4 mph</p>
+          <h2 id="city"></h2>
+          <p id="description"></p>
+          <p id="current-temp"></p>
+          <p id="current-windChill"></p>
+          <p id="current-humid"></p>
+          <p id="current-windSpeed"></p>
         </div>
 
         <div class="summary-icon">
@@ -46,51 +47,66 @@
         <h3>Tooele</h3>
         <div class="days">
           <div class="flex-col">
-            <span id="dayTitle1" class="col-head">Thursday</span>
+            <span id="day1" class="col-head"></span>
             <span class="temp-data">
-              <span id="data1"></span>
+              <span id="data1">
+                <p id="humidity"></p>
+                <p id="windSpd"></p>
+              </span>
               <img src="images/Icons/Sunny.png" />
-              <span>82°F</span>
+              <span id="Tempur">82°F</span>
             </span>
           </div>
           <div class="flex-col">
-            <span id="dayTitle2" class="col-head">Friday</span>
+            <span id="day2" class="col-head"></span>
             <span class="temp-data">
-              <span id="data2"></span>
+              <span id="data2">
+                <p id="humidity"></p>
+                <p id="windSpd"></p>
+              </span>
               <img src="images/Icons/Windy.jpg" />
-              <span>80°F</span>
+              <span id="Tempur">80°F</span>
             </span>
           </div>
           <div class="flex-col">
-            <span id="dayTitle3" class="col-head">Saturday</span>
+            <span id="day3" class="col-head"></span>
             <span class="temp-data">
-              <span id="data3"></span>
+              <span id="data3">
+                <p id="humidity"></p>
+                <p id="windSpd"></p>
+              </span>
               <img src="images/Icons/PartlyCloudy.jpg" />
-              <span>79°F</span>
+              <span id="Tempur">79°F</span>
             </span>
           </div>
           <div class="flex-col">
-            <span id="dayTitle4" class="col-head">Sunday</span>
+            <span id="day4" class="col-head"></span>
             <span class="temp-data">
-              <span id="data4"></span>
+              <span id="data4">
+                <p id="humidity"></p>
+                <p id="windSpd"></p>
+              </span>
               <img src="images/Icons/Cloudy.png" />
-              <span>77°F</span>
+              <span id="Tempur">77°F</span>
             </span>
           </div>
           <div class="flex-col">
-            <span id="dayTitle5" class="col-head">Monday</span>
+            <span id="day5" class="col-head"></span>
             <span class="temp-data">
-              <span id="data5"></span>
+              <span id="data5">
+                <p id="humidity"></p>
+                <p id="windSpd"></p>
+              </span>
               <img src="images/Icons/Rain.png" />
-              <span>74°F</span>
+              <span id="Tempur">74°F</span>
             </span>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <p>© 2022 | Austin Donovan | <u>Tooele Technical College</u></p>
-      <p>last updated: Wed June 18 2025</p>
+      <p>© 2025 | James Hendricks | <u>Tooele Technical College</u></p>
+      <p>last updated: Wed July 9th 2025</p>
     </footer>
   </body>
 </html>
