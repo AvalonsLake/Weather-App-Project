@@ -36,15 +36,15 @@ fetch(URL)
     function weather(i) {
       if (jsObject.list[i].weather[0].main === "Clear") {
         img = document.createElement("img");
-        img.src = "images/icons/Sunny.png";
+        img.src = "images/Sunny.png";
       }
       if (jsObject.list[i].weather[0].main === "Clouds") {
         img = document.createElement("img");
-        img.src = "images/icons/Cloudy.png";
+        img.src = "images/Cloudy.png";
       }
       if (jsObject.list[i].weather[0].main === "Rain") {
         img = document.createElement("img");
-        img.src = "images/icons/Rain.png";
+        img.src = "images/Rain.png";
       }
     }
 
