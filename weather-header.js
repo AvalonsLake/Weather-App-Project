@@ -1,4 +1,4 @@
-let URL = `http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=64d5297e47b399787417abeb2ea972c2`;
+let URL = `https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=64d5297e47b399787417abeb2ea972c2`;
 let city = document.getElementById("city");
 let temp = document.getElementById("current-temp");
 let windChill = document.getElementById("current-windChill");
