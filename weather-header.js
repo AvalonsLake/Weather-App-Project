@@ -1,3 +1,6 @@
+let newsURL =
+  "https://newsapi.org/v2/everything?q=tesla&from=2025-06-10&sortBy=publishedAt&apiKey=26f101b47ea24571bc823724357f33d4";
+
 let URL = `http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=64d5297e47b399787417abeb2ea972c2`;
 let city = document.getElementById("city");
 let temp = document.getElementById("current-temp");
