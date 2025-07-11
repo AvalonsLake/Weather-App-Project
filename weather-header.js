@@ -1,4 +1,8 @@
-let URL = `https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=64d5297e47b399787417abeb2ea972c2`;
+const newsURL =
+  "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=26f101b47ea24571bc823724357f33d4";
+// 26f101b47ea24571bc823724357f33d4
+
+const URL = `https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=64d5297e47b399787417abeb2ea972c2`;
 let city = document.getElementById("city");
 let temp = document.getElementById("current-temp");
 let windChill = document.getElementById("current-windChill");
@@ -14,10 +18,18 @@ let data4 = document.getElementById("data4");
 let data5 = document.getElementById("data5");
 let img;
 
+// news vars
+let headline = document.getElementById("headline");
+let article1 = document.getElementById("article1");
+let article2 = document.getElementById("article2");
+let article3 = document.getElementById("article3");
+let article4 = document.getElementById("article4");
+let article5 = document.getElementById("article5");
+
+// Weather Page call
 fetch(URL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     let wndChill =
       35.74 +
       0.6215 * jsObject.list[0].wind.deg -
@@ -85,6 +97,65 @@ fetch(URL)
         data5.appendChild(img);
         data5.appendChild(tmp);
         data5.appendChild(spd);
+      }
+    }
+  });
+
+// News API call
+fetch(newsURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    let pic = document.createElement("img");
+    pic.src = jsObject.articles[1].urlToImage;
+
+    let link1 = document.createElement("a");
+    link1.href = jsObject.articles[1].url;
+    link1.textContent = jsObject.articles[1].title;
+
+    let titleH = document.createElement("h2");
+
+    titleH.appendChild(link1);
+    headline.appendChild(pic);
+    headline.appendChild(titleH);
+
+    for (let i = 6; i <= 10; i++) {
+      let title = document.createElement("h2");
+      let link = document.createElement("a");
+      let img = document.createElement("img");
+      let des = document.createElement("p");
+
+      des.className = "description";
+      link.href = jsObject.articles[i].url;
+      link.textContent = jsObject.articles[i].title;
+      title.appendChild(link);
+
+      img.src = jsObject.articles[i].urlToImage;
+      des.textContent = jsObject.articles[i].description;
+
+      if (i === 6) {
+        article1.appendChild(title);
+        article1.appendChild(img);
+        article1.appendChild(des);
+      }
+      if (i === 7) {
+        article2.appendChild(title);
+        article2.appendChild(img);
+        article2.appendChild(des);
+      }
+      if (i === 8) {
+        article3.appendChild(title);
+        article3.appendChild(img);
+        article3.appendChild(des);
+      }
+      if (i === 9) {
+        article4.appendChild(title);
+        article4.appendChild(img);
+        article4.appendChild(des);
+      }
+      if (i === 10) {
+        article5.appendChild(title);
+        article5.appendChild(img);
+        article5.appendChild(des);
       }
     }
   });
